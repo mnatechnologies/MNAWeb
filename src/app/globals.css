@@ -132,3 +132,20 @@ body {
 .image-hover:hover img {
   transform: scale(1.05);
 }
+
+/* Print Styles for Brochure */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+}
