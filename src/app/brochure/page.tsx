@@ -248,17 +248,22 @@ export default function BrochurePage() {
             {/* Partners Section */}
             <div className="mb-6 mt-2">
               <p className="text-sm text-gray-500 text-center mb-4 uppercase tracking-wider">Powered By Industry Leaders</p>
-              <div className="flex items-center justify-center gap-10">
+              <div className="flex items-center justify-center gap-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/mna images/google.png" alt="Google" className="h-8 object-contain brightness-0 invert opacity-70" />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/mna images/dell-logo.png" alt="Dell" className="h-8 object-contain brightness-0 invert opacity-70" />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/mna images/cisco-logo.png" alt="Cisco" className="h-8 object-contain brightness-0 invert opacity-70" />
+                <img src="/mna%20images/Ubiquiti.png" alt="Ubiquiti" className="h-8 object-contain brightness-0 invert opacity-70" />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/mna images/aws-logo.png" alt="AWS" className="h-8 object-contain brightness-0 invert opacity-70" />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/mna images/asus-logo.png" alt="ASUS" className="h-8 object-contain brightness-0 invert opacity-70" />
+                <img src="/mna images/ms.png" alt="MS" className="h-8 object-contain brightness-0 invert opacity-70" />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/mna images/juniper-logo.png" alt="Juniper" className="h-8 object-contain brightness-0 invert opacity-70" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/mna images/ys.png" alt="Yeastar" className="h-8 object-contain brightness-0 invert opacity-70" />
+
               </div>
             </div>
           </div>
