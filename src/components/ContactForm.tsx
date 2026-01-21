@@ -10,10 +10,35 @@ export default function ContactForm() {
     company: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you for your message. We will be in touch soon!");
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      setStatus("success");
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(error instanceof Error ? error.message : "Something went wrong");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -163,11 +188,24 @@ export default function ContactForm() {
                 />
               </div>
 
+              {status === "success" && (
+                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-700">
+                  Thank you for your message! We&apos;ll be in touch soon.
+                </div>
+              )}
+
+              {status === "error" && (
+                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
+                  {errorMessage}
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full py-4 bg-[#0066cc] text-white font-semibold rounded-lg hover:bg-[#0052a3] transition-colors shadow-lg shadow-blue-500/20"
+                disabled={status === "loading"}
+                className="w-full py-4 bg-[#0066cc] text-white font-semibold rounded-lg hover:bg-[#0052a3] transition-colors shadow-lg shadow-blue-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {status === "loading" ? "Sending..." : "Send Message"}
               </button>
 
               <p className="text-sm text-gray-500 text-center">

@@ -49,17 +49,18 @@ export default function BrochurePage() {
           {/* Header Section */}
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center overflow-hidden p-2">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/branding/logo.png"
-                  alt="MNA Technologies"
-                  style={{ width: '40px', height: '40px', objectFit: 'contain' }}
-                />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-white">MNA Technologies</h1>
-                <p className="text-[#00b4d8] text-sm font-medium">Your Trusted IT Partner</p>
+              <div className="flex items-start gap-3">
+                <div className="flex items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <Image
+                    src="/branding/MNA Technology Logo GApps.png"
+                    alt="MNA Technologies"
+                    width='100'
+                    height='80'
+                    className='brightness-0 invert'
+                  />
+                </div>
+                <p className="text-[#00b4d8] text-sm font-medium mt-4 ml-5">Smart IT. Simplified.</p>
               </div>
             </div>
             <div className="text-right">
@@ -83,10 +84,10 @@ export default function BrochurePage() {
             {/* Content */}
             <div className="relative px-8 py-6 text-white">
               <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-[#00b4d8] text-xs font-medium mb-3">
-                Our Services
+                What We Do
               </span>
-              <h2 className="text-3xl font-bold mb-2">Managed IT Services</h2>
-              <p className="text-base text-gray-300">Enterprise-grade solutions for Australian businesses</p>
+              <h2 className="text-3xl font-bold mb-2">Managed IT Solutions</h2>
+              <p className="text-base text-gray-300">Scalable technology for modern Australian businesses</p>
             </div>
           </div>
 
@@ -107,16 +108,16 @@ export default function BrochurePage() {
                   </div>
                   <ul className="text-sm text-gray-300 space-y-1">
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> 24/7 Service Desk Support
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> 24/7 Help Desk
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> ITIL-Based Helpdesk
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Remote & Onsite Support
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Onsite Support Services
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Proactive Monitoring
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Rapid Response Times
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Fast Issue Resolution
                     </li>
                   </ul>
                 </div>
@@ -132,20 +133,20 @@ export default function BrochurePage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-white">End-User Computing</h3>
+                    <h3 className="text-xl font-bold text-white">Digital Workspace</h3>
                   </div>
                   <ul className="text-sm text-gray-300 space-y-1">
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Device Management
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Unified Device Management
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Software Deployment
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Automated Deployments
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Virtual Desktop (VDI)
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Virtual Desktops (VDI)
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Mobile Device Management
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Mobile & BYOD Solutions
                     </li>
                   </ul>
                 </div>
@@ -161,20 +162,20 @@ export default function BrochurePage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-white">Infrastructure Deployment</h3>
+                    <h3 className="text-xl font-bold text-white">Cloud & Infrastructure</h3>
                   </div>
                   <ul className="text-sm text-gray-300 space-y-1">
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Cloud Solutions (AWS, Azure)
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> AWS & Azure Cloud
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> On-Premise Servers
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Hybrid Cloud Architecture
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Hybrid IT Environments
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Seamless Migrations
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Infrastructure Migration
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Server & Storage Solutions
                     </li>
                   </ul>
                 </div>
@@ -190,20 +191,20 @@ export default function BrochurePage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-white">Connectivity</h3>
+                    <h3 className="text-xl font-bold text-white">Network & Security</h3>
                   </div>
                   <ul className="text-sm text-gray-300 space-y-1">
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Business Internet Solutions
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Business-Grade Internet
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Network Design & Setup
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> SD-WAN & SASE
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> SD-WAN Solutions
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Zero Trust Security
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Secure VPN Services
+                      <span className="w-2 h-2 bg-[#00b4d8] rounded-full" /> Secure Remote Access
                     </li>
                   </ul>
                 </div>
@@ -212,7 +213,7 @@ export default function BrochurePage() {
 
             {/* Why Choose Us */}
             <div className="mb-6">
-              <h3 className="text-xl font-bold text-white mb-3 text-center">Why Choose MNA Technologies?</h3>
+              <h3 className="text-xl font-bold text-white mb-3 text-center">The MNA Difference</h3>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                   <div className="w-10 h-10 bg-gradient-to-br from-[#0066cc] to-[#00b4d8] rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -220,8 +221,8 @@ export default function BrochurePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <h4 className="font-bold text-white text-sm mb-1">Proven Reliability</h4>
-                  <p className="text-xs text-gray-400">Enterprise-grade solutions with guaranteed uptime</p>
+                  <h4 className="font-bold text-white text-sm mb-1">Always On</h4>
+                  <p className="text-xs text-gray-400">24/7 monitoring with guaranteed uptime SLAs</p>
                 </div>
                 <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                   <div className="w-10 h-10 bg-gradient-to-br from-[#00b4d8] to-[#0066cc] rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -229,8 +230,8 @@ export default function BrochurePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h4 className="font-bold text-white text-sm mb-1">Fast Response</h4>
-                  <p className="text-xs text-gray-400">Quick deployment and rapid issue resolution</p>
+                  <h4 className="font-bold text-white text-sm mb-1">Rapid Deployment</h4>
+                  <p className="text-xs text-gray-400">Fast rollouts with minimal disruption</p>
                 </div>
                 <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                   <div className="w-10 h-10 bg-gradient-to-br from-[#0066cc] to-[#00b4d8] rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -238,15 +239,15 @@ export default function BrochurePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
-                  <h4 className="font-bold text-white text-sm mb-1">Expert Team</h4>
-                  <p className="text-xs text-gray-400">Certified professionals with deep expertise</p>
+                  <h4 className="font-bold text-white text-sm mb-1">Local Experts</h4>
+                  <p className="text-xs text-gray-400">Australian-based certified professionals</p>
                 </div>
               </div>
             </div>
 
             {/* Partners Section */}
             <div className="mb-6 mt-2">
-              <p className="text-sm text-gray-500 text-center mb-4 uppercase tracking-wider">Trusted Technology Partners</p>
+              <p className="text-sm text-gray-500 text-center mb-4 uppercase tracking-wider">Powered By Industry Leaders</p>
               <div className="flex items-center justify-center gap-10">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/mna images/dell-logo.png" alt="Dell" className="h-8 object-contain brightness-0 invert opacity-70" />
@@ -270,8 +271,8 @@ export default function BrochurePage() {
 
             <div className="relative flex items-center justify-between">
               <div>
-                <h3 className="text-2xl font-bold mb-1">Ready to Transform Your IT?</h3>
-                <p className="text-base text-white/80">Contact us today for a free consultation</p>
+                <h3 className="text-2xl font-bold mb-1">Let&apos;s Build Something Better</h3>
+                <p className="text-base text-white/80">Get in touch for a free IT assessment</p>
               </div>
               <div className="text-right bg-white/10 backdrop-blur-sm rounded-xl px-8 py-4">
                 <p className="text-3xl font-bold">1300 646 397</p>
