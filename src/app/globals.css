@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Modern color palette */
+  --color-primary: #0066cc;
+  --color-primary-dark: #004d99;
+  --color-secondary: #1a1a2e;
+  --color-accent: #00b4d8;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-muted: #888888;
+  --color-bg-light: #f8f9fa;
+  --color-bg-alt: #f0f4f8;
+  --color-border: #e5e7eb;
 }
 
 * {
@@ -16,25 +25,127 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: var(--color-text);
+  line-height: 1.6;
 }
 
-/* 3D Flip Card Utilities */
-.perspective-1000 {
-  perspective: 1000px;
+/* Modern Button Styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 102, 204, 0.3);
 }
 
-.style-preserve-3d {
-  transform-style: preserve-3d;
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
 }
 
-.backface-hidden {
-  backface-visibility: hidden;
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.rotate-y-180 {
-  transform: rotateY(180deg);
+.btn-secondary:hover {
+  background: white;
+  color: #0066cc;
 }
 
-.group:hover .group-hover\:rotate-y-180 {
-  transform: rotateY(180deg);
+/* Card Hover Effects */
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: transparent;
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 7rem 0;
+  }
+}
+
+/* Gradient backgrounds */
+.gradient-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #0066cc 0%, #00b4d8 100%);
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #0066cc, #00b4d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth image hover */
+.image-hover {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.image-hover img {
+  transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* Print Styles for Brochure */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
 }
