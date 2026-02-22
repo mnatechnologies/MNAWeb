@@ -288,32 +288,6 @@ export default function BrochurePage() {
         </div>
       </div>
 
-      {/* Print Styles */}
-      <style jsx global>{`
-        @media print {
-          @page {
-            size: A4;
-            margin: 0;
-          }
-
-          html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
-
-          body {
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-          }
-
-          .brochure-page {
-            width: 210mm;
-            height: 297mm;
-            page-break-after: avoid;
-          }
-        }
-      `}</style>
     </>
   );
 }
